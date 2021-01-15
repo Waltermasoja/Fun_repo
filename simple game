@@ -1,0 +1,30 @@
+#This is ust a simple game
+import calendar
+print('this is the mad lib generator')
+year = int(input('enter year'))
+month = int(input('enter month'))
+
+print(calendar.month(year,month))
+loop = 1
+while loop < 10:
+    noun = input('choose a noun: ')
+    p_noun = input('enter plural: ')
+    noun2 = input('choose a noun2 :')
+    place = input('choose a place :')
+    adjective = input('choose a doing word :')
+    noun3 = input('choose a noun3')
+    print('---------------------------------------------------------------------')
+    print ('be kind to your ',noun)
+    print('for it can be someones',noun2)
+    print('who is in',place)
+    print('where its very',adjective)
+    print('you may think its ',noun3)
+    print('.......................................................................')
+    wishlist = list([noun,noun2,place,adjective,noun3])
+    words = [word.lower() for word in wishlist]
+    words.sort()
+    print(words)
+    loop += 1
+
+
+
