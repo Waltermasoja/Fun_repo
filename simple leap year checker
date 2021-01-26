@@ -1,0 +1,23 @@
+month = int(input('enter the moth that you are in :'))
+if year % 4 == 0:
+    print('{} is a leap year:'.format(year))
+    print('calendar for the current month is displayed below :')
+    if year % 100 == 0:
+        print('{} is a leap year:'.format(year))
+        print('calendar for the current month is displayed below :')
+        if year % 100 == 0:
+            print('{} is a leap year:'.format(year))
+            print('calendar for the current month is displayed below :')
+        else:
+            print('not a leap year :')
+            print('calendar for the current month is displayed below :')
+
+    else:
+        print('not a leap year :')
+        print('calendar for the current month is displayed below :')
+
+else:
+    print('not a leap year :')
+    print('calendar for the current month is displayed below :')
+
+print(calendar.month(year,month))
