@@ -1,0 +1,24 @@
+import math
+print('simple BMI calculator :')
+print('...........................................................')
+
+weight = float(input('enter your weight in kgs :'))
+height = float(input('enter your height in metres:'))
+
+
+def calculate():
+    bmi = weight/(height*height)
+    return bmi
+
+
+bmi = calculate()
+
+if bmi >= 0:
+    print(' you are overweight you need to do some workouts buddy :')
+else:
+    print('your weight is good')
+
+print('you body mass index is {}'.format(calculate()))
+
+
+
