@@ -1,0 +1,10 @@
+saying = input('enter the words you want to be sorted :')
+# breaking down the string into a list of words
+words = [word.lower() for word in saying.split()]
+
+# sorting the words into alphabetical order
+words.sort()
+
+# displaying the words
+for word in words:
+    print(word)
